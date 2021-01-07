@@ -49,11 +49,12 @@
       </div>
 
       <sys-paragraph-1 class="disclaimer">
-        If you have NVIDIA graphics, download the ISO with the proprietary
-        NVIDIA driver preinstalled.
+        NVIDIA グラフィックを持っているなら、NVIDIAドライバーがプリインストールされている ISO
+	をダウンロードしてください。
       </sys-paragraph-1>
       <sys-paragraph-1 class="disclaimer">
-        Disable Secure Boot in your BIOS to install Pop!_OS.
+        Pop!_OSをインストールするためにセキュアブート
+        を無効にしてください。
       </sys-paragraph-1>
 
       <div class="buttons">
@@ -61,32 +62,32 @@
           rel="noopener"
           target="_blank"
           color="secondary"
-          title="Download Pop!_OS"
+          title="ダウンロード Pop!_OS"
           :ghost="!preferIntel"
           :href="intelUrl"
           @click="$ga.event('download', 'download', 'intel', intelUrl)"
         >
-          Download {{ version }}{{ (isLts) ? ' LTS' : '' }}
+          ダウンロード {{ version }}{{ (isLts) ? ' LTS' : '' }}
         </sys-form-button>
 
         <sys-form-button
           rel="noopener"
           color="secondary"
           target="_blank"
-          title="Download Pop!_OS for systems with NVIDIA GPUs"
+          title="NVIDIA グラフィックシステムのためにPop!_OSをダウンロードして"
           :ghost="!preferNvidia"
           :href="nvidiaUrl"
           @click="$ga.event('download', 'download', 'nvidia', nvidiaUrl)"
         >
-          Download {{ version }}{{ (isLts) ? ' LTS' : '' }} (nVidia)
+          ダウンロード {{ version }}{{ (isLts) ? ' LTS' : '' }} (nVidia)
         </sys-form-button>
       </div>
 
       <sys-paragraph-1 tag="dl">
-        <dt>Requirements:</dt>
-        <dd>2 GB RAM, 16 GB storage, 64-bit processor</dd>
+        <dt>システム要求</dt>
+        <dd>2 GB RAM、16 GB ハードディスクの空き容量、64 ビットプロセッサ</dd>
 
-        <dt>Filesize:</dt>
+        <dt>ファイルサイズ</dt>
         <dd>{{ intelSize }} GB, {{ nvidiaSize }} GB (NVIDIA)</dd>
 
         <dt>SHA256 Sum:</dt>
