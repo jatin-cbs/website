@@ -4,14 +4,16 @@
     <div class="content">
       <div class="copy">
         <sys-subheader-1>
-          Welcome to Pop!_OS
+          Pop!_OS へようこそ
         </sys-subheader-1>
 
         <sys-paragraph-1>
-          Pop!_OS is an operating system for STEM and creative professionals who
-          use their computer as a tool to discover and create. Unleash your
-          potential on secure, reliable open source software. Based on your
-          exceptional curiosity, we sense you have a lot of it.
+          Pop!_OSは発見して作成するためにコンピューターを
+          使用しているSTEMおよびクリエイティブプロフェッショナル
+          向けのオペレーティングシステムです。安全で信頼性の高い
+          オープンソースソフトウェアであなたの可能性を解き放ちます。
+          あなたの好奇心に基づいて、私たちはあなたが多くの可能性を
+          秘めていると思います
         </sys-paragraph-1>
 
         <div>
@@ -19,14 +21,14 @@
             color="secondary"
             @click.prevent="toggleDownload"
           >
-            Download
+            ダウンロード
           </sys-form-button>
 
           <sys-form-button
             color="primary"
             @click.prevent="togglePayment"
           >
-            Support Pop
+            POPをサポートする
           </sys-form-button>
         </div>
       </div>
